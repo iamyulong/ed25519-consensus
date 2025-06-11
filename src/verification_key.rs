@@ -5,7 +5,7 @@ use curve25519_dalek::{
     scalar::Scalar,
     traits::IsIdentity,
 };
-use sha2::{Digest, Sha512};
+use sha2::{digest::Update, Sha512};
 
 use crate::{Error, Signature};
 

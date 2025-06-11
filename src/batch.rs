@@ -56,7 +56,7 @@ use curve25519_dalek::{
     traits::{IsIdentity, VartimeMultiscalarMul},
 };
 use rand_core::{CryptoRng, RngCore};
-use sha2::{Digest, Sha512};
+use sha2::{digest::Update, Sha512};
 
 use crate::{Error, Signature, VerificationKey, VerificationKeyBytes};
 

@@ -3,7 +3,7 @@ use curve25519_dalek::{
     constants::EIGHT_TORSION, edwards::CompressedEdwardsY, scalar::Scalar, traits::IsIdentity,
 };
 use once_cell::sync::Lazy;
-use sha2::{Digest, Sha512};
+use sha2::{digest::Update, Sha512};
 
 mod util;
 use util::TestCase;
